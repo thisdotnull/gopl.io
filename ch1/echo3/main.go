@@ -15,8 +15,8 @@ import (
 //!+
 func main() {
 	//fmt.Println(strings.Join(os.Args[1:], " "))
-	for i := 0; i < len(os.Args); i++ {
-		fmt.Printf("os.Args[%d] = %s\n", i, os.Args[i])
+	for i, v := range os.Args[1:] {
+		fmt.Printf("os.Args[%d] = %s\n", i, v)
 	}
 }
 
