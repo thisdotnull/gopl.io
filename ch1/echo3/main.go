@@ -9,12 +9,15 @@ package main
 import (
 	"fmt"
 	"os"
-	"strings"
+	//"strings"
 )
 
 //!+
 func main() {
-	fmt.Println(strings.Join(os.Args[1:], " "))
+	//fmt.Println(strings.Join(os.Args[1:], " "))
+	for i := 0; i < len(os.Args); i++ {
+		fmt.Printf("os.Args[%d] = %s\n", i, os.Args[i])
+	}
 }
 
 //!-
